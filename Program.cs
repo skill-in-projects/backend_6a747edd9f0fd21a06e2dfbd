@@ -10,6 +10,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll", policy =>
     {
+        //check...
         // Allow any origin including GitHub Pages (*.github.io), localhost, and Railway domains
         // Using SetIsOriginAllowed to explicitly allow GitHub Pages and other common origins
         policy.SetIsOriginAllowed(origin =>
